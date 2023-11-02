@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Form with DOM Manipulation</h1>
+    <form id="infoForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="number" id="pincode" name="pincode" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="food">Choose Food (Select at least 2):</label>
+        <select id="food" name="food" multiple required>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="pasta">Pasta</option>
+            <option value="sushi">Sushi</option>
+            <option value="salad">Salad</option>
+        </select><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Submitted Information:</h2>
+    <table id="infoTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+    </table>
+    <script src="script.js">
+    </script>
+</body>
+</html>
